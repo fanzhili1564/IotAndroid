@@ -289,7 +289,7 @@ public class WheelDrive extends BaseDrive {
     /**
      * WheelDriveException
      */
-    public class WheelDriveException extends IOException {
+    public class WheelDriveException extends DriveException {
 
         public WheelDriveException(String message) {
             super(message);

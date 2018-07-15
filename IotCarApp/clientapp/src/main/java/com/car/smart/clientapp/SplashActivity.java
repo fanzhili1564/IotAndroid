@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.car.smart.clientapp.driver.BaseDrive;
+import com.car.smart.clientapp.driver.WheelDrive;
 import com.google.android.things.pio.Gpio;
 import com.google.android.things.pio.PeripheralManager;
 
@@ -34,6 +36,11 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        try {
+            WheelDrive.getInstance().start();
+        } catch (BaseDrive.DriveException e) {
+            e.printStackTrace();
+        }
     }
 
 }

@@ -10,4 +10,44 @@ public class NoneDrive extends BaseDrive {
     public String getMessage() {
         return ERROR_MESSAGE;
     }
+
+    @Override
+    public void start() {
+
+    }
+
+    @Override
+    public void forward(int mills) {
+
+    }
+
+    @Override
+    public void reversing(int mills) {
+
+    }
+
+    @Override
+    public void turnLeftFront(int mills) throws DriveException {
+
+    }
+
+    @Override
+    public void turnRightFront(int mills) throws DriveException {
+
+    }
+
+    @Override
+    public void turnRightBack(int mills) throws DriveException {
+
+    }
+
+    @Override
+    public void turnLeftBack(int mills) throws DriveException {
+
+    }
+
+    @Override
+    public void stop() throws DriveException {
+
+    }
 }
